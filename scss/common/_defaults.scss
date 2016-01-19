@@ -5,8 +5,7 @@ html {
 body {
   min-height: 100%;
   height: 100%;
-  font-size: 14px;
-  background: #475a60;
+  font-size: 20px;
 }
 
 .clearfix {
@@ -26,6 +25,10 @@ body {
 
 .pull-left {
   float: left;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
 }
 
 .pull-right {
