@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Name</title>
+  <title>Реставрация антикварных вещей</title>
   <meta charset="utf-8"/>
   <meta name="HandheldFriendly" content="false"/>
   <meta name="viewport" content="user-scalable=yes, width=device-width"/>
@@ -16,14 +16,14 @@
 <body>
 <div class="back-popup"></div>
 <div class="popup">
-  <form>
-    <input type="text" placeholder="Ваше имя" class="form-text">
-    <input type="text" placeholder="Ваш номер телефона" class="form-text">
-    <input type="text" placeholder="Ваша электронная почта" class="form-text">
+  <form method="POST" action="form.php">
+    <input type="text" placeholder="Ваше имя" class="form-text" name="name">
+    <input type="text" placeholder="Ваш номер телефона" class="form-text" name="tel">
+    <input type="text" placeholder="Ваша электронная почта" class="form-text" name="email">
     <input type="file">
-    <textarea placeholder="Ваш комментарий" class="form-text"></textarea>
+    <textarea placeholder="Ваш комментарий" class="form-text" name="text"></textarea>
     <div class="btn">
-      <input type="submit" value="Заказать бесплатную консультацию эксперта">
+      <input type="submit" value="Заказать бесплатную консультацию эксперта" name="submit">
     </div>
   </form>
 </div>
@@ -41,12 +41,12 @@
     <div class="header-bottom">
       <nav>
         <ul>
-          <li><a href="#">Что Вы получите</a></li>
-          <li><a href="#"> Что мы реставрируем</a></li>
-          <li><a href="#"> Наше УТП</a></li>
-          <li><a href="#"> Схема работы с клиентом</a></li>
-          <li><a href="#"> Прайс лист</a></li>
-          <li><a href="#"> Контакты</a></li>
+          <li><a href="#one">Что Вы получите</a></li>
+          <li><a href="#two"> Что мы реставрируем</a></li>
+          <li><a href="#three"> Наше УТП</a></li>
+          <li><a href="#four"> Схема работы с клиентом</a></li>
+          <li><a href="#five"> Прайс лист</a></li>
+          <li><a href="#six"> Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -70,7 +70,7 @@
   </div>
 </section>
 
-<section class="section-two">
+<section class="section-two" id="one">
   <h3>Обратившись к нам Вы получите:</h3>
   <ol>
     <li>экспертное заключение на Ваш предмет</li>
@@ -91,7 +91,7 @@
     <a href="#">Заказать бесплатную консультацию эксперта</a>
   </div>
 </section>
-<section class="section-three">
+<section class="section-three" id="two">
   <h3>ВЫ МОЖЕТЕ ОБРАТИТЬСЯ К НАМ ЗА РЕСТАВРАЦИЕЙ
     АНТИКВАРНЫХ И СОВРЕМЕННЫХ ЦЕННЫХ ВЕЩЕЙ,
     ТАКИХ КАК:</h3>
@@ -210,7 +210,7 @@
   </div>
 </section>
 
-<section class="section-four">
+<section class="section-four" id="three">
   <p>
     Обращаясь к нам,<br/>
     Вы не просто обращаетесь в реставрационную мастерскую,
@@ -233,7 +233,7 @@
   </div>
 </section>
 
-<section class="section-five">
+<section class="section-five" id="four">
   <h3>Схема нашей работы с клиентом: </h3>
 
   <div class="items">
@@ -330,7 +330,7 @@
   </div>
 </section>
 
-<section class="section-six">
+<section class="section-six" id="five">
   <table>
     <thead>
     <tr>
@@ -429,7 +429,7 @@
   </div>
 </section>
 
-<section class="section-seven">
+<section class="section-seven" id="six">
   <h3>
     ВЫ МОЖЕТЕ ВЫЗВАТЬ НАШЕГО СПЕЦИАЛИСТА НА ДОМ <br/>
     ИЛИ ПРИВЕЗТИ СВОЮ ВЕЩЬ К НАМ В ОФИС</h3>
