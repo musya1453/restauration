@@ -1,26 +1,22 @@
 (function ($) {
 
-  if (typeof Drupal != 'undefined') {
-    Drupal.behaviors.wcportalMobileTheme = {
-      attach: function (context, settings) {
-        init();
-      },
+  $(window).load(function(){
+    var btn = $('.btn a'),
+      popup = $('.popup'),
+      $back = $('.back-popup');
 
-      completedCallback: function () {
-        // Do nothing. But it's here in case other modules/themes want to override it.
-      }
-    }
-  }
+    btn.on('click', function(e){
+      e.preventDefault();
 
-  $(function () {
-    if (typeof Drupal == 'undefined') {
-      init();
-    }
-  });
+      popup.show();
+      $back.show();
+    });
 
-  function init() {
-
-  }
+    $back.on('click', function(){
+      popup.hide();
+      $back.hide();
+    })
+  })
 
 })(jQuery);
 
